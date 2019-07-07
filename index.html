@@ -130,7 +130,16 @@
 		</div>
 	</section>
 	<section id="video" class="clearfix">
-		<div class="w50">
+		<div class="smallScreenWatchNowHeader">
+			<h5>Watch Now</h5>
+			<div class="hr"></div>
+			<div class="allVideos">
+				<a href="#">
+					<span><h6>ALL VIDEOS</h6> <i class="fas fa-arrow-right"></i></span>
+				</a>
+			</div>
+		</div>
+		<div id="nowPlaying" class="w50">
 			<div id="videoWrapper">
 				<iframe src="https://www.youtube.com/embed/rjeMWCa716E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
@@ -190,7 +199,7 @@
 						</li>
 					</ul>
 				</div>
-				<div id="allVideos">
+				<div class="allVideos">
 					<a href="#">
 						<span><h6>ALL VIDEOS</h6> <i class="fas fa-arrow-right"></i></span>
 					</a>
@@ -230,8 +239,9 @@
 							</div>
 							<p class="reviewTeaser">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 						</div>
+
 					</li>
-					<li id="bReview" class="clearfix">
+					<li id="bReview" class="clearfix notA">
 						<div class="albumCover">
 							<img src="./placeholder3.svg" class="" alt="album cover #1">
 						</div>
@@ -256,11 +266,12 @@
 								</ul>
 							</div>
 							<p class="reviewTeaser">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  </p>
+							<div class="more"><i class="fa fa-arrow-down"></i> More</div>
 						</div>
 					</li>
-					<li id="cReview" class="clearfix">
+					<li id="cReview" class="clearfix notA">
 						<div class="albumCover">
-							<div class="placeholder"></div>
+							<img src="./placeholder1.svg" class="" alt="album cover #1">
 						</div>
 						<div class="albumInfo">
 							<h3>Mollit Anim Id Est</h3>
@@ -283,11 +294,12 @@
 								</ul>
 							</div>
 							<p class="reviewTeaser">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  </p>
+							<div class="more"><i class="fa fa-arrow-down"></i> More</div>
 						</div>
 					</li>
-					<li id="dReview" class="clearfix">
+					<li id="dReview" class="clearfix notA">
 						<div class="albumCover">
-							<div class="placeholder"></div>
+							<img src="./placeholder2.svg" class="" alt="album cover #1">
 						</div>
 						<div class="albumInfo">
 							<h3>Mollit Anim Id Est</h3>
@@ -310,9 +322,10 @@
 								</ul>
 							</div>
 							<p class="reviewTeaser">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  </p>
+							<div class="more"><i class="fa fa-arrow-down"></i> More</div>
 						</div>
 					</li>
-					<li id="eReview" class="clearfix">
+					<li id="eReview" class="clearfix notA">
 						<div class="albumCover">
 							<img src="./placeholder.svg" alt="cover of E review album">
 						</div>
@@ -337,9 +350,14 @@
 								</ul>
 							</div>
 							<p class="reviewTeaser">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  </p>
+							<div class="more"><i class="fa fa-arrow-down"></i> More</div>
 						</div>
 					</li>
 				</ul>
+				<div class="allReviews">
+					<a href="#"><h6>All Album Reviews</h6>
+					<div><span><i class="fas fa-arrow-right"></i></span></div></a>
+				</div>
 			</main>
 		</div>
 	</div>
@@ -552,73 +570,86 @@
 			</article>
 		</div>
 		<div id="featuresThird" class="clearfix">
-			<div class="thirdFeature">
-				<img src="./placeholder3.svg" alt="picture of a band">
-				<div class="thirdFeatureContent">
-					<div class="meta">
-						<span class="genreTag"><a class="hoverRed" href="#">Consectur </a></span><span class="slash">/</span><span class="byline"> By: Dolor Sit</span>
+			<div class="well">
+				<div class="thirdFeature">
+					<img src="./placeholder3.svg" alt="picture of a band">
+					<div class="thirdFeatureContent">
+						<div class="meta">
+							<span class="genreTag"><a class="hoverRed" href="#">Consectur </a></span><span class="slash">/</span><span class="byline"> By: Dolor Sit</span>
+						</div>
+						<h5>
+							<a href="#">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</a>
+						</h5>
 					</div>
-					<h5>
-						<a href="#">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</a>
-					</h5>
+				</div><!--
+				--><div class="thirdFeature">
+					<img src="./placeholder.svg" alt="picture of a band">
+					<div class="thirdFeatureContent">
+						<div class="meta">
+							<span class="genreTag"><a class="hoverRed" href="#">Consectur </a></span><span class="slash">/</span><span class="byline"> By: Dolor Sit</span>
+						</div>
+						<h5>
+							<a href="#">non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</a>
+						</h5>
+					</div>
+				</div><!--
+				--><div class="thirdFeature">
+					<img src="./placeholder1.svg" alt="picture of a band">
+					<div class="thirdFeatureContent">
+						<div class="meta">
+							<span class="genreTag"><a class="hoverRed" href="#">Consectur </a></span><span class="slash">/</span><span class="byline"> By: Dolor Sit</span>
+						</div>
+						<h5>
+							<a href="#">dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat</a>
+						</h5>
+					</div>
+				</div><!--
+				--><div class="allFeatures indexLink">
+					<a href="#"><h6>All Features</h6>
+					<div class="animatedArrow"><span><i class="fas fa-arrow-right"></i></span></div></a>
 				</div>
-			</div>
-			<div class="thirdFeature">
-				<img src="./placeholder.svg" alt="picture of a band">
-				<div class="thirdFeatureContent">
-					<div class="meta">
-						<span class="genreTag"><a class="hoverRed" href="#">Consectur </a></span><span class="slash">/</span><span class="byline"> By: Dolor Sit</span>
+			</div><!--
+			--><div class="well">
+				<div class="thirdFeature">
+					<img src="./placeholder1.svg" alt="picture of a band">
+					<div class="thirdFeatureContent">
+						<div class="meta">
+							<span class="genreTag"><a class="hoverRed" href="#">Consectur </a></span><span class="slash">/</span><span class="byline"> By: Dolor Sit</span>
+						</div>
+						<h5>
+							<a href="#">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</a>
+						</h5>
 					</div>
-					<h5>
-						<a href="#">non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</a>
-					</h5>
+				</div><!--
+				--><div class="thirdFeature">
+					<img src="./placeholder2.svg" alt="picture of a band">
+					<div class="thirdFeatureContent">
+						<div class="meta">
+							<span class="genreTag"><a class="hoverRed" href="#">Consectur </a></span><span class="slash">/</span><span class="byline"> By: Dolor Sit</span>
+						</div>
+						<h5>
+							<a href="#">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</a>
+						</h5>
+					</div>
+				</div><!--
+				--><div class="thirdFeature">
+					<img src="./placeholder3.svg" alt="picture of a band">
+					<div class="thirdFeatureContent">
+						<div class="meta">
+							<span class="genreTag"><a class="hoverRed" href="#">Consectur </a></span><span class="slash">/</span><span class="byline"> By: Dolor Sit</span>
+						</div>
+						<h5>
+							<a href="#">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</a>
+						</h5>
+					</div>
 				</div>
-			</div>
-			<div class="thirdFeature">
-				<img src="./placeholder1.svg" alt="picture of a band">
-				<div class="thirdFeatureContent">
-					<div class="meta">
-						<span class="genreTag"><a class="hoverRed" href="#">Consectur </a></span><span class="slash">/</span><span class="byline"> By: Dolor Sit</span>
-					</div>
-					<h5>
-						<a href="#">dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat</a>
-					</h5>
-				</div>
-			</div>
-			<div class="thirdFeature">
-				<img src="./placeholder1.svg" alt="picture of a band">
-				<div class="thirdFeatureContent">
-					<div class="meta">
-						<span class="genreTag"><a class="hoverRed" href="#">Consectur </a></span><span class="slash">/</span><span class="byline"> By: Dolor Sit</span>
-					</div>
-					<h5>
-						<a href="#">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</a>
-					</h5>
-				</div>
-			</div>
-			<div class="thirdFeature">
-				<img src="./placeholder2.svg" alt="picture of a band">
-				<div class="thirdFeatureContent">
-					<div class="meta">
-						<span class="genreTag"><a class="hoverRed" href="#">Consectur </a></span><span class="slash">/</span><span class="byline"> By: Dolor Sit</span>
-					</div>
-					<h5>
-						<a href="#">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</a>
-					</h5>
-				</div>
-			</div>
-			<div class="thirdFeature">
-				<img src="./placeholder3.svg" alt="picture of a band">
-				<div class="thirdFeatureContent">
-					<div class="meta">
-						<span class="genreTag"><a class="hoverRed" href="#">Consectur </a></span><span class="slash">/</span><span class="byline"> By: Dolor Sit</span>
-					</div>
-					<h5>
-						<a href="#">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</a>
-					</h5>
+				<div class="allFeatures indexLink">
+					<a href="#"><h6>All Features</h6>
+					<div class="animatedArrow"><span><i class="fas fa-arrow-right"></i></span></div></a>
 				</div>
 			</div>
 		</div>
+		
 	</section>
 	<section id="listsAndGuides" class='clearfix'>
 		<div class="paddingHeadingBox">

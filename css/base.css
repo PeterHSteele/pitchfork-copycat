@@ -12,6 +12,7 @@
 	--pinkOrange:rgb(252,104,103);
 	--mediumLightGray:rgb(117,117,117);
 	--mediumDarkGray:rgb(94,94,94);
+	--gray200:rgb(200,200,200);
 }
 
 body{
@@ -93,6 +94,46 @@ a{
 	text-align: center;
 	letter-spacing: .1em;
 	text-transform: uppercase;
+}
+
+.indexLink h6{
+	margin:0;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	font-size: .6em;
+}
+
+.indexLink:hover h6{
+	color:var(--redAccent);
+}
+
+.indexLink{
+	box-sizing:border-box;
+	border-top: 1px solid var(--secondaryNavHoverIconColor);
+	background:white;
+	text-align: center;
+	padding:2em 5% 2em 2em;
+	width:96%;
+	float:left;
+	margin-top: 1em;
+}
+
+.indexLink a{
+	display:block;
+	width:100%;
+	height:100%;
+}
+
+.indexLink i{
+	padding-top: 1em;
+	color:var(--redAccent);
+	font-size: .8em;
+}
+
+.indexLink i:hover{
+	animation-name:bounce;
+	animation-iteration-count:2;
+	animation-duration:.5s;
 }
 /*header*/
 
@@ -321,27 +362,51 @@ header>div{
 	box-sizing:border-box;
 }
 
-#watchNow h5{
-	width:20%;
+.smallScreenWatchNowHeader{
+	padding-bottom:1em;
+	position:relative;
+	display:none;
+}
+
+#watchNow h5,
+.smallScreenWatchNowHeader h5{
+	text-transform: uppercase;
 	text-align: left;
 	margin:0;
 	padding:0;
-	float:left;
 	font-weight: 400;
 	letter-spacing: .2em
 }
+
+#watchNow h5{
+	width:20%;
+	text-align: left;
+	float:left;
+}
+
+.smallScreenWatchNowHeader h5{
+	width:78%;
+	display:inline-block;
+}
+
 
 .headingWrapper{
 	position:relative;
 	margin-bottom:10px;
 }
 
-#watchNow .hr{
+#watchNow .hr,
+.smallScreenWatchNowHeader .hr{
 	position:absolute;
 	border-top:1px solid var(--watchNowBorder);
 	top:7px;
 	left:120px;
 	width:75%;
+}
+
+.smallScreenWatchNowHeader .hr{
+	top:9px;
+	width:65%;
 }
 
 .imageWrapper{
@@ -427,21 +492,31 @@ header>div{
 	color:var(--secondaryNavHoverBackgroundColor);
 }
 
-#allVideos{
+.smallScreenWatchNowHeader .allVideos{
+	display:inline-block;
+	width:20%;
+	text-align: right;
+	margin-top: 0;
+	text-align: right;
+}
+
+.allVideos{
 	margin-top: 10px;
 }
 
-#allVideos i {
+.allVideos i {
 	color:var(--redAccent);
 	font-size: .7em;
 }
 
-#allVideos h6{
+.allVideos h6{
 	letter-spacing: .1em;
 	display:inline;
 }
 
-/* Add #2 / Reviews */
+
+
+/* Ad #2 / Reviews */
 
 
 #ad2Wrap,
@@ -570,12 +645,40 @@ header>div{
 	margin-top: 25px;
 	font-size: .8em;
 	line-height: 1.5em;
+	margin-bottom: .5em;
+}
+
+#reviews .more{
+	color:var(--gray200);
+	font-size: .6em;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	font-weight: 900;
+	display:none;
 }
 
 #reviews a:hover{
 	color:var(--redAccent);
 }
 
+.allReviews{
+	background:white;
+	text-align: center;
+	padding:2em;
+}
+
+.allReviews h6{
+	margin:0;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	font-size: .6em;
+}
+
+.allReviews i{
+	padding-top: 1em;
+	color:var(--redAccent);
+	font-size: .6em;
+}
 /*The Latest*/
 
 #latest{
@@ -737,6 +840,7 @@ header>div{
 
 #features{
 	padding-bottom: 20px;
+	background:white;
 }
 
 #features .paddingHeadingBox{
@@ -852,10 +956,19 @@ header>div{
 	margin-top:50px;
 }
 
-.thirdFeature, 
+#features div.well{
+	width:50%;
+	display:inline-block;
+	padding:0;
+}
+
 .thirdFeatureContent,
 .thirdFeature img{
 	float:left;
+}
+
+.thirdFeature{
+	display:inline-block;
 }
 
 .thirdFeature img{
@@ -865,8 +978,9 @@ header>div{
 }
 
 #features #featuresThird .thirdFeature{
-	width:50%;
-	padding:0;
+	width:96%;
+	box-sizing:border-box;
+	padding:0 5% 0 0;
 	margin-top: 20px;
 }
 
@@ -987,7 +1101,8 @@ header>div{
 	font-size: .8em;
 }
 
-#listsAndGuides i:hover{
+#listsAndGuides i:hover,
+.allReviews i:hover{
 	animation-name:bounce;
 	animation-iteration-count:2;
 	animation-duration:.5s;
